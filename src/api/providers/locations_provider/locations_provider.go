@@ -17,9 +17,10 @@ const (
 )
 
 func GetCountry(countryId string) (*locations.Country, *errors.ApiError) {
+	log.Println("location_provider Getcountry countryId", countryId)
 	response, err := restclient.Get(fmt.Sprintf(urlGetCountry, countryId), http.Header{}, nil)
-	log.Println("locationProvider.GetCountry response  ",response)
-	log.Println("locationProvider.GetCountry err  ",err)
+	//log.Println("locationProvider.GetCountry response  ", response)
+	//log.Println("locationProvider.GetCountry err  ", err)
 	if err != nil {
 		println("err in provider.getCountry", err)
 	}
