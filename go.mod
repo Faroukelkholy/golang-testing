@@ -3,6 +3,6 @@ module golang-testing
 go 1.13
 
 require (
-	github.com/mercadolibre/golang-restclient v0.0.0-20170701022150-51958130a0a0
+	github.com/gin-gonic/gin v1.6.2
 	github.com/stretchr/testify v1.5.1
 )

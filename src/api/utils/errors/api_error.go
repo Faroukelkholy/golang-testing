@@ -1,7 +1,7 @@
 package errors
 
 type ApiError struct {
-	Status  int
+	StatusCode  int
 	Message string
 	Error   string
 }
